@@ -9,9 +9,15 @@
     <param.screenshot>${PROJECT_ROOT}\工具箱图像.png</param.screenshot>
     <param.version>1.0.0</param.version>
     <param.output>${PROJECT_ROOT}\埃博拉酱的文本分析工具箱.mltbx</param.output>
-    <param.products.name />
-    <param.products.id />
-    <param.products.version />
+    <param.products.name>
+      <item>Text Analytics Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>156</item>
+    </param.products.id>
+    <param.products.version>
+      <item>1.9</item>
+    </param.products.version>
     <param.platforms />
     <param.guid>85f2e628-cb9d-426b-b596-0a88b613d14f</param.guid>
     <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
@@ -64,9 +70,6 @@ resources/project</param.exclude.filters>
     <param.additional.sw.linux.url />
     <unset>
       <param.output />
-      <param.products.name />
-      <param.products.id />
-      <param.products.version />
       <param.platforms />
       <param.exclude.pcodedmfiles />
       <param.examples />
