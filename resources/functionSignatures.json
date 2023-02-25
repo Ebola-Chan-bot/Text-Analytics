@@ -1,0 +1,51 @@
+{
+    "TextAnalytics.CheckUpdateFromGitHub": {
+        "inputs": [
+            {
+                "name": "ReleaseUrl",
+                "kind": "required",
+                "type": [
+                    [
+                        "string",
+                        "scalar"
+                    ],
+                    [
+                        "char",
+                        "row"
+                    ]
+                ],
+                "purpose": "发布包的 GitHub Release URL"
+            },
+            {
+                "name": "PackageName",
+                "kind": "required",
+                "type": [
+                    [
+                        "string",
+                        "scalar"
+                    ],
+                    [
+                        "char",
+                        "row"
+                    ]
+                ],
+                "purpose": "要检查更新的包名"
+            },
+            {
+                "name": "CurrentVersion",
+                "kind": "required",
+                "type": [
+                    [
+                        "string",
+                        "scalar"
+                    ],
+                    [
+                        "char",
+                        "row"
+                    ]
+                ],
+                "purpose": "要检查是否最新的当前版本号"
+            }
+        ]
+    }
+}
