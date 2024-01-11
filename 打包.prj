@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="C:\Users\vhtmf\Documents\MATLAB\文本分析\打包为工具箱.prj" location="C:\Users\vhtmf\Documents\MATLAB\文本分析" name="打包为工具箱" target="target.toolbox" target-name="打包为工具箱">
+  <configuration build-checksum="3068685418" file="C:\Users\vhtmf\Documents\MATLAB\文本分析\打包.prj" location="C:\Users\vhtmf\Documents\MATLAB\文本分析" name="打包" target="target.toolbox" target-name="打包为工具箱">
     <param.appname>埃博拉酱的文本分析工具箱</param.appname>
     <param.authnamewatermark>埃博拉酱</param.authnamewatermark>
     <param.email>vhtmfu@outlook.com</param.email>
@@ -16,7 +16,7 @@
       <item>156</item>
     </param.products.id>
     <param.products.version>
-      <item>23.2</item>
+      <item>24.1</item>
     </param.products.version>
     <param.platforms />
     <param.guid>85f2e628-cb9d-426b-b596-0a88b613d14f</param.guid>
@@ -54,12 +54,12 @@ resources/project</param.exclude.filters>
     <param.exported.on.package>false</param.exported.on.package>
     <param.required.addons>
       <requiredaddons>
-        <requiredAddOn earliest="15.0.0.0" fromRepository="true" id="b344599a-983e-4a6c-bd99-ed3a1bdd9626" include="true" latest="latest">埃博拉酱 的 MATLAB 扩展 Extension(2)</requiredAddOn>
+        <requiredAddOn earliest="16.0.0" fromRepository="true" id="b344599a-983e-4a6c-bd99-ed3a1bdd9626" include="true" latest="latest">埃博拉酱 的 MATLAB 扩展 Extension(3)</requiredAddOn>
       </requiredaddons>
     </param.required.addons>
     <param.matlab.project.id />
     <param.matlab.project.name />
-    <param.release.start>R2021a</param.release.start>
+    <param.release.start>R2023b</param.release.start>
     <param.release.end>latest</param.release.end>
     <param.release.current.only>false</param.release.current.only>
     <param.compatiblity.windows>true</param.compatiblity.windows>
@@ -106,7 +106,6 @@ resources/project</param.exclude.filters>
       <file>${PROJECT_ROOT}\+TextAnalytics</file>
       <file>${PROJECT_ROOT}\README.md</file>
       <file>${PROJECT_ROOT}\resources</file>
-      <file>${PROJECT_ROOT}\TextAnalyticsException.m</file>
       <file>${PROJECT_ROOT}\工具箱图像.png</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
@@ -117,7 +116,7 @@ resources/project</param.exclude.filters>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2023b</root>
+      <root>C:\Program Files\MATLAB\R2024a</root>
       <toolboxes />
     </matlab>
     <platform>
