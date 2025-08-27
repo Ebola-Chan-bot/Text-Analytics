@@ -31,3 +31,7 @@ codegen/
 
 # Cloud based storage dotfile
 .MATLABDriveTag
+
+/deploymentLog.html
+
+/resources/3bf43bf0-2117-42df-9639-120b249035c8/
