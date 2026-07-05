@@ -24,6 +24,7 @@
 %
 resources/project
 resources/1*
+resources/3*
 **/*.prj
 **/*.prj.bak
 .git*
@@ -33,3 +34,4 @@ resources/1*
 工具箱图像.png
 README.md
 deploymentLog.html
+*.mltbx

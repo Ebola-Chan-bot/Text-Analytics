@@ -10,7 +10,7 @@
 %[text] %如下代码，可以放在你的包经常用到的函数中启动，使用persistent确保每个MATLAB会话只检查一次，不会频繁打扰用户
 %[text] persistent NewVersion
 %[text] if isempty(NewVersion)
-%[text] 	NewVersion=TextAnalysis.CheckUpdateFromGitHub('https://github.com/Silver-Fang/Text-Analysis/releases','埃博拉酱的文本分析工具箱','v1.0.0');
+%[text] 	NewVersion=TextAnalytics.CheckUpdateFromGitHub('https://github.com/Ebola-Chan-bot/Text-Analytics/releases','埃博拉酱的文本分析工具箱','v1.0.0');
 %[text] end
 %[text] ```
 %[text] ## 输入参数
@@ -41,10 +41,10 @@ catch ME
 		ME.rethrow;
 	end
 end
-Releases=Releases.findElement('div[data-hpc]>section');
+Releases=Releases.findElement('div[data-hpc] section');
 for R=1:numel(Releases)
 	if ~isempty(Releases(R).findElement('.Label--success'))
-		NewVersion=Releases(R).findElement('span.wb-break-all').extractHTMLText;
+		NewVersion=Releases(R).findElement('a[href*="/releases/tag/"]').extractHTMLText;
 		if ~strcmp(NewVersion,CurrentVersion)
 			fprintf('%s%s已发布，<a href="%s">立即更新</a>\n',PackageName,NewVersion,ReleaseUrl);
 		end
