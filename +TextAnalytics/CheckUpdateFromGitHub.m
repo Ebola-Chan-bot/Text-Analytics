@@ -35,7 +35,7 @@ try
 	Releases=htmlTree(Releases);
 catch ME
 	if ME.identifier=="MATLAB:undefinedVarOrClass"
-		TextAnalytics.Exceptions.Thread_parallelism_not_supported.Warn;
+		TextAnalytics.Exception.Thread_parallelism_not_supported.Warn;
 		return;
 	else
 		ME.rethrow;
@@ -51,7 +51,7 @@ for R=1:numel(Releases)
 		return;
 	end
 end
-TextAnalytics.Exceptions.Latest_release_not_found.Warn;
+TextAnalytics.Exception.Latest_release_not_found.Warn;
 
 %[appendix]{"version":"1.0"}
 %---
